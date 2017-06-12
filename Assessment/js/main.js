@@ -304,12 +304,12 @@ var date = new Date(birthday);
 // Compartmentalization
 // - Fix the Compartmentalization issue in order to make the assertion pass.
 // **************************************************************************************/
-(function(multiply) {
+(function() {
   "use strict";
   var multiply = 2 * 8;
 
-  function duplicate(multiply) {
-    multiply = 2 * 10;
+  function duplicate() {
+    let multiply = 2 * 10;
   };
 
   duplicate();
